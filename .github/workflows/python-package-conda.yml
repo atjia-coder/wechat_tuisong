@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-  - cron: 0-59/5 11 * * *   
-  #执行时间在凌晨共执行4次1：34，45，52，58
+  - cron: 30 11 * * *   
+  #执行时间在凌晨共执行1次，时间在每天11：30
 
 jobs:
   build:
