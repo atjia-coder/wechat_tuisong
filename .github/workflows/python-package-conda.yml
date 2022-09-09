@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   schedule:
   - cron: 30 11 * * *   
-  #执行时间在凌晨共执行1次，时间在每天11：30
+  #执行时间在凌晨共执行1次，时间在每天19：39
 
 jobs:
   build:
