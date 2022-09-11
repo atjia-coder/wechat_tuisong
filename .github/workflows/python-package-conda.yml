@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-  - cron: 30 11 * * *   
+  - cron: 30 22 * * *   
   #执行时间在凌晨共执行1次，时间在每天19：39
 
 jobs:
