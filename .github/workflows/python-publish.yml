@@ -1,21 +1,13 @@
 name: Python Package using Conda
-
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+    branches: [ main ]
   schedule:
   - cron: 30 22 * * *
   #执行时间在凌晨共执行1次，时间在每天6：39
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
@@ -27,6 +19,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
         pip install bs4
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: SignIn
       run: python ./main.py
