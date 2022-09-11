@@ -2,9 +2,11 @@ name: Python Package using Conda
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
   schedule:
   - cron: 30 22 * * *   
   #执行时间在凌晨共执行1次，时间在每天6：39
