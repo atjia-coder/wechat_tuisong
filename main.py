@@ -8,7 +8,8 @@ import config
 from requests import get, post
 from datetime import datetime, date
 
-
+# 想要获取的信息 --及其api
+#22 - 12 -1 刷新Git提交第一次
 
 # 封装Request
 def get_ad():
